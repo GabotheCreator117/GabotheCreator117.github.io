@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css"/>
+    <title>Almacen</title>
+</head>
+<body onload="mostrarProductos()">
+    <div id="formato-imagen">
+        <img src="imagenes/logo-tienda.png"/>
+    </div>
+    
+    <div class="contenedor" id="cabecero">
+        <h1>Listado de Productos Electronicos</h1>
+    </div>
+    
+    <div class="contenedor">
+        <div class="elemento">
+            <ul id="productoListado">
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <h2 id="cabecero_dos">Agregar Productos</h2>
+    <div class="contenedor">
+        <div style="text-align: center;">
+            <button style="cursor: pointer;" onclick="agregarProducto()">+</button>
+            <button style="cursor: pointer;" onclick="eliminarProducto()">-</button>
+            <button style="cursor: pointer;" onclick="eliminarTodo()">~</button>
+        </div>
+        <form id="forma">
+            <input type="text" id="Id" placeholder="Identificador"/>
+            <input type="text" id="nombreProducto" placeholder="Nombre Producto"/>
+            <input type="text" id="descripcion" placeholder="Descripcion"/>
+            <input type="text" id="precio" placeholder="Precio"/>
+        </form>
+    </div>
+
+    <script src="js/almacen.js"></script>
+    <script src="js/listadoJS.js"></script>
+</body>
+</html>
